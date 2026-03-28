@@ -361,6 +361,14 @@ section {
   display: block;
 }
 
+.navbar__logo-img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
 /* ── Hero ──────────────────────────────────────────────── */
 .hero {
   min-height: 100vh;
@@ -1374,6 +1382,54 @@ section {
   border-radius: var(--radius-xl);
   padding: 2.5rem;
   box-shadow: var(--shadow-md);
+}
+
+.whatsapp-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.whatsapp-group__link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: #e9fbe9;
+  border: 1px solid #25d366;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #1a5c2a;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.whatsapp-group__link:hover {
+  background: #25d366;
+  color: #fff;
+}
+
+.telegram-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 10px 16px;
+  background: #e8f4fd;
+  border: 1px solid #229ed9;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #0a6fa8;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.telegram-link:hover {
+  background: #229ed9;
+  color: #fff;
 }
 
 /* ── Footer ────────────────────────────────────────────── */
